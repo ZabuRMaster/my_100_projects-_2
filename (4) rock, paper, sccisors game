@@ -1,0 +1,49 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+
+pictures = [rock, paper, scissors]
+real_player = int(input("Type what do you pick: 0 for Rock, 1 for Paper, 2 for Scissors.\n"))
+if real_player >= 0 and real_player <= 2:
+    print(pictures[real_player])
+
+computer_player = random.randint(0, 2)
+print("computer says:")
+if computer_player >= 0 and computer_player <=2:
+    print(pictures[computer_player])
+
+
+if real_player == 0 and computer_player ==2:
+    print("You Win!")
+elif computer_player == 0 and real_player == 2:
+    print("You lose!")
+elif real_player == computer_player:
+    print("It's a draw!")
+elif real_player > computer_player:
+    print("You Win!")
+elif computer_player > real_player:
+    print("You Lose!")
