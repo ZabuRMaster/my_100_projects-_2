@@ -1,0 +1,49 @@
+print(r'''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Riga.")
+print("Your mission is to find the treasure.")
+road_crossing = input('You\'re at a cross road in Riga. Where do you want to go?\n         Type "left" or "right""\n')
+
+if road_crossing == "left":
+    print("You came to Liedes Iela 26, you came into the house, the smoke inside killed you by suffocating. GAME OVER!")
+elif road_crossing == "right":
+        Tukums_1 = input("You came to Asari. You have to get to Tukums 2.\n         Type 'wait' to wait for the train. Type 'swim' to swim by Lielupe river\n")
+        if Tukums_1 == "wait":
+
+            Tukums_2 = input("You have reached Tukums 2 unharmed. There are 3 people standing in front of you.\n         Roberts.Z, Nikita.S, Mikhail.M. Who's hand you'r shaking?\n")
+            if Tukums_2 == "Roberts.Z" or Tukums_2 == "RobchikEpt":
+                print("Congradulations, you have found a treasure of aa genius investor mind! YOU WIN!")
+            elif Tukums_2 == "Mikhail.M":
+                print("With more risk but still you managed to find a casino exploiter! YOU WIN!")
+            elif Tukums_2 == "Nikita.S":
+                print("He lures you into a crypto scam and you lose EVERYTHING! GAME OVER!")
+            else:
+                print("you cant cheat PRICK!")
+
+        elif Tukums_1 == "swim":
+            print("Drunk Vlad drowned you in the the cold baltic sea. GAME OVER!")
+        else:
+            print("Broskiiiiiii Chiiiiil")
+
+else:
+    print("Bro are u ok?")
